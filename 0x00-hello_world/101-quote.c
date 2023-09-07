@@ -1,9 +1,8 @@
 #include <stdio.h>
 /**
- * main - Entry point
- * description: Write a C program using write function
+ * main - c programme prints a new line, to the standard using write function
  * 	ssize_t write(int fd, const void *buf, size_t count);
- * Return: 1 (not Success)
+ * Return: 1 (Success)
 */
 
 int main(void)
