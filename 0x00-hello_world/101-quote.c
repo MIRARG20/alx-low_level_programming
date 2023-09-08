@@ -7,8 +7,9 @@
  */
 
 int main(void)
-{
-FILE *error_stream = stderr;
-fprintf(error_stream, "and that piece of art is useful - Dora Korpar, 2015-10-19\n");
+}
+const char *message = "and that piece of art is useful\" - Dora Korpar, 2015-10-19";
+write(2, message, strlen(message));
 return (1);
+
 }
