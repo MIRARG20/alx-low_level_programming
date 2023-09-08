@@ -2,12 +2,13 @@
 
 /**
  * main - Starting point
- * Return: 0 (success)
-*/
+ *
+ * Return: 0 (sucess)
+ */
 
 int main(void)
-{	char quo[] = "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n";
-
-	write(1. quo. 59);
-	return (1);
+{
+FILE *error_stream = stderr;
+fprintf(error_stream, "and that piece of art is useful - Dora Korpar, 2015-10-19\n");
+return (1);
 }
