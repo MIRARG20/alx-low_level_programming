@@ -11,12 +11,12 @@ while (ch <= 'z')
 {
 if (ch == 'e' || ch == 'q')
 ch++;
-putchar(CH);
+putchar(ch);
 CH++;
 }
 putchar('\n');
 
 	return (0);
 
-}
+
 }
