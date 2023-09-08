@@ -7,16 +7,19 @@
 
 int main(void)
 {
-for (int i = 0; i <= 9; i++)
+int digit = 0;
+while (digit <= 9)
 {
-putchar(i + '0');
+putchar(i + '48');
 
 if (i != 9)
 {
 putchar(',');
 putchar(' ');
 }
+digit++;
 }
+putchar ('\n');
 
 return (0);
 }
