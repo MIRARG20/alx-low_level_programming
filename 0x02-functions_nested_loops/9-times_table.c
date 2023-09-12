@@ -4,18 +4,35 @@
  * times_table - prints the 9 times table, starting with 0
  */
 void times_table(void)
-
-
 {
-for (int i = 0; i <= 9; i++)
+int i, j, k;
+
+for (i = 0; i < 10; i++)
 {
-printf("9 x %d = %d\n", i, 9 * i);
+for (j = 0; j < 10; j++)
+{
+k = j * i;
+if (j == 0)
+{
+putchar(k + '0');
+}
+
+if (k < 10 && j != 0)
+{
+putchar(',');
+putchar(' ');
+putchar(' ');
+putchar(k + '0');
+} else if (k >= 10)
+{
+putchar(',');
+putchar(' ');
+putchar((k / 10) + '0');
+putchar((k % 10) + '0');
+}
+}
+_putchar('\n');
 }
 }
 
-int main()
-{
-times_table();
-return 0;
-}
 
