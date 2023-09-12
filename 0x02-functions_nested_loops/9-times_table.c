@@ -23,7 +23,8 @@ putchar(',');
 putchar(' ');
 putchar(' ');
 putchar(k + '0');
-} else if (k >= 10)
+}
+else if (k >= 10)
 {
 putchar(',');
 putchar(' ');
@@ -31,7 +32,7 @@ putchar((k / 10) + '0');
 putchar((k % 10) + '0');
 }
 }
-_putchar('\n');
+putchar('\n');
 }
 }
 
