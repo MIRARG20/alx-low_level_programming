@@ -4,5 +4,5 @@
 #include <stdio.h>
 
 void positive_or_negative(int i);
-main - causes an infinite loop
+int largest_number(int a, int b, int c);
 #endif /* MAIN_H */
