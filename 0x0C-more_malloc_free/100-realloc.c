@@ -1,6 +1,4 @@
 #include "main.h"
-#include <stdio.h>
-#include <stdlib.h>
 
 /**
  * _realloc -  resize the memory block that was previously allocated
@@ -35,9 +33,13 @@ if (new_size > old_size)
 {
 t = malloc(new_size);
 if (t == NULL)
+{
 return (NULL);
+}
 for (i = 0; i < old_size && i < new_size; i++)
+{
 *((char *)t + i) = *((char *)ptr + i);
+}
 free(ptr);
 }
 return (t);
