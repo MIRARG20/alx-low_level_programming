@@ -1,3 +1,5 @@
+#include "main.h"
+
 /**
  * _realloc -  resize the memory block that was previously allocated
  * @ptr: a pointer to the previously allocated memory
