@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 #include <stdlib.h>
 
 /**
@@ -16,12 +17,12 @@ if (new_size == old_size)
 {
 return (ptr);
 }
-if (new_size == 0 && ptr != NULL)
+if (new_size == 0 && ptr != '\0')
 {
 free(ptr);
 return (NULL);
 }
-if (ptr == NULL)
+if (ptr == '\0')
 {
 t = malloc(new_size);
 if (t == NULL)
