@@ -1,3 +1,5 @@
+#include "main.h"
+
 /**
  * array_range - creates an array of integers
  * @min: minimum int
@@ -7,20 +9,23 @@
 int *array_range(int min, int max)
 {
 int *ptr;
+int length;
 int i;
 if (min > max)
 {
 return (NULL);
 }
-ptr = malloc(sizeof(int) * (max - min + 1));
+length = max - min + 1;
+ptr = malloc(sizeof(int) * length);
 if (ptr == NULL)
 {
 return (NULL);
 }
-
-for (i = 0; i <= max - min; i++)
+for (i = 0; i < length; i++)
 {
-ptr[i] = min + i;
+ptr[i] = min;
+min++;
 }
 return (ptr);
+
 }
