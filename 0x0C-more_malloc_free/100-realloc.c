@@ -22,7 +22,7 @@ if (new_size == 0 && ptr != NULL)
 free(ptr);
 return (NULL);
 }
-if (ptr == '\0')
+if (ptr == NULL)
 {
 t = malloc(new_size);
 if (t == NULL)
