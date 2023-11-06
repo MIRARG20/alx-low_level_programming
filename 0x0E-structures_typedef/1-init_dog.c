@@ -4,15 +4,15 @@
  * @d: array
  * @name:dog's name
  * @age: dog's age
- * @owner: dog's owner
- * Description: a struct for a dog
+ * @owner: owner
+ * Return: void
  */
 void init_dog(struct dog *d, char *name, float age, char *owner)
 {
 if (d == NULL)
-{
+
 return;
-}
+
 else
 {
 d->name = name;
