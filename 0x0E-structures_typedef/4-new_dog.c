@@ -67,5 +67,5 @@ free(p);
 return (NULL);
 }
 (*p).owner = new_owner;
-return (snoopie);
+return (p);
 }
